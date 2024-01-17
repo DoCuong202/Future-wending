@@ -1,3 +1,28 @@
-PODFILE CHECKSUM: 1703a46fa8d776f34ff53cda42ebab4ae2e5465f
+PODS:
+  - SETabView (2.0.0)
+  - SnapKit (5.6.0)
+  - SwiftKeychainWrapper (4.0.1)
+  - Toast-Swift (5.1.0)
+
+DEPENDENCIES:
+  - SETabView
+  - SnapKit
+  - SwiftKeychainWrapper
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - SETabView
+    - SnapKit
+    - SwiftKeychainWrapper
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  SETabView: 20a3418b1bc61b36d7f6fb9195f1ebb0907bdf35
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  Toast-Swift: dd369e68ee529f542c65bd0d0c6c50cd743cf6f2
+
+PODFILE CHECKSUM: 19cf38af3ff522c15f723d948c70006c845f15ab
 
 COCOAPODS: 1.14.3

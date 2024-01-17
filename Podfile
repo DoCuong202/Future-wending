@@ -7,5 +7,9 @@ target 'FutureLove' do
 
   # Pods for FutureLove
 
+  pod 'SnapKit'
+  pod 'SwiftKeychainWrapper'
+  pod 'Toast-Swift'
+  pod 'SETabView'
 end
 

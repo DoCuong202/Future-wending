@@ -8,7 +8,6 @@
 import UIKit
 import Toast_Swift
 import SwiftKeychainWrapper
-import SwiftVideoBackground
 
 class LoginViewController: BaseViewController {
     

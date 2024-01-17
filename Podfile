@@ -6,11 +6,10 @@ target 'FutureLove' do
   use_frameworks!
 
   # Pods for FutureLove
-  pod 'Alamofire'
+
   pod 'SnapKit'
   pod 'SwiftKeychainWrapper'
   pod 'Toast-Swift'
-  pod 'SwiftVideoBackground'
   pod 'SETabView'
 end
 

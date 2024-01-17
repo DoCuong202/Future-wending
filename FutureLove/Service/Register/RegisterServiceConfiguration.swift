@@ -15,8 +15,8 @@ import Foundation
 
 
 
-import Foundation
-import Alamofire
+
+
 
 enum RegisterServiceConfiguration {
     case Register(email: String, password: String, user_name: String,

@@ -39,7 +39,7 @@ class BaseAPI<T: Configuration> {
                   headers: headers)
         .uploadProgress(queue: .main, closure: { progress in
             print("Upload Progress: \(progress.fractionCompleted)")
-           // view.makeToast("Upload Progress: \(progress.fractionCompleted)", position: .top)
+            view.makeToast("Upload Progress: \(progress.fractionCompleted)", position: .top)
         }).responseDecodable(of: M.self) { response in
             guard let existData = response.data else {
                 completionHandler(.failure(ServiceError.notFoundData))

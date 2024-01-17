@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Alamofire
+
 class LoginAPI: BaseAPI<LoginServiceConfiguration> {
     static let shared = LoginAPI()
     

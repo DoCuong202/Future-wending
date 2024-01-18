@@ -11,5 +11,7 @@ target 'FutureLove' do
   pod 'SwiftKeychainWrapper'
   pod 'Toast-Swift'
   pod 'SETabView'
+  pod 'Alamofire'
+  
 end
 

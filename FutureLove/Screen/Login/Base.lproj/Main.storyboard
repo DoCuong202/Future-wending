@@ -12,7 +12,7 @@
         <!--Main View Controller1-->
         <scene sceneID="CbS-tO-kFi">
             <objects>
-                <viewController storyboardIdentifier="mainViewController1" id="4Gz-Wu-nKP" customClass="MainViewController1" customModule="FutureLove" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController1" id="4Gz-Wu-nKP" customClass="MainViewController1" customModule="FutureLove" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PKL-Qe-GQw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

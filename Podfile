@@ -12,6 +12,6 @@ target 'FutureLove' do
   pod 'Toast-Swift'
   pod 'SETabView'
   pod 'Alamofire'
-  
+  pod 'Kingfisher'
 end
 

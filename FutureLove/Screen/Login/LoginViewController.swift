@@ -133,8 +133,8 @@ class LoginViewController: BaseViewController {
                     }
                 }
             }
-            let storyboard = UIStoryboard(name: "Main", bundle: nil) // type storyboard name instead of Main
-                     if let myViewController = storyboard.instantiateViewController(withIdentifier:"RegisterViewController") as? RegisterViewController {
+            let storyboard = UIStoryboard(name: "Menu", bundle: nil) // type storyboard name instead of Main
+                     if let myViewController = storyboard.instantiateViewController(withIdentifier:"MainMenuViewController") as? MainMenuViewController {
                          self.present(myViewController, animated: true, completion: nil)
                      }
         }

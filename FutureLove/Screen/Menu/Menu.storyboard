@@ -36,14 +36,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8b-35-ahg">
                                                 <rect key="frame" x="0.0" y="0.0" width="248" height="70"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-T5-2eV">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="QVg-T5-2eV">
                                                         <rect key="frame" x="5" y="5" width="60" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="S5q-rw-d0J"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai Nguyen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxX-QJ-C1l">
-                                                        <rect key="frame" x="85" y="18" width="154" height="34"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxX-QJ-C1l">
+                                                        <rect key="frame" x="85" y="18" width="66.333333333333314" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -65,8 +65,8 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="GLX-a9-qy5"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="couple"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="couple"/>
                                                 <connections>
                                                     <action selector="btnMainMenu:" destination="Dnk-ec-bpt" eventType="touchUpInside" id="Gv5-zL-gkg"/>
                                                     <action selector="btnMainMenu:" destination="Y6W-OH-hqX" eventType="touchDown" id="PCQ-fS-wts"/>
@@ -154,7 +154,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Avatar" width="48" height="48"/>
         <image name="Line" width="32" height="32"/>
         <image name="couple" width="24" height="24"/>
         <image name="lo 1" width="110" height="52"/>

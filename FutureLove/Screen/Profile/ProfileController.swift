@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mycellMenu", for: indexPath) 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mycellMenu", for: indexPath)
 
         cell.textLabel?.text = lstMenuProflie[indexPath.row]
         return cell
@@ -27,7 +27,6 @@ class ProfileController: UIViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.TableViewProfile.isHidden = true
-        TableViewProfile.register(UINib(nibName: "mycellMenu", bundle: nil), forCellReuseIdentifier: "mycellMenu")
 
         // Do any additional setup after loading the view.
     }

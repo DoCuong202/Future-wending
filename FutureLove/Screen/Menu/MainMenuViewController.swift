@@ -30,14 +30,9 @@ class MainMenuViewController: UIViewController, UITableViewDataSource, UITableVi
             let selectedItem = lstMenu[indexPath.row]
 
             if selectedItem == "Service" {
-              
-                let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
 
              
-                let profileViewController = profileStoryboard.instantiateInitialViewController()
-
-             
-                self.present(profileViewController!, animated: true, completion: nil)
+                self.present(vc, animated: true, completion: nil)
             }
          
             else if selectedItem == "OtherMenuItem" {

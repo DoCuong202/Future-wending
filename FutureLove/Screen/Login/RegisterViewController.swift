@@ -114,6 +114,9 @@ class RegisterViewController: UIViewController {
             }
         }
     }
+    @IBAction func BackApp(){
+        self.dismiss(animated: true)
+    }
     // MARK: - Validate
     
     /*@IBAction func changeUserName(_ sender: Any) {

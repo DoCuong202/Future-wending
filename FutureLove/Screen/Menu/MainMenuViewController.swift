@@ -18,12 +18,38 @@ class MainMenuViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
     let lstMenu: [String] = ["Home","Service","Contact Us"]
+   
     @IBAction func btnMainMenu(_ sender: UIButton) {
         self.TableViewMenu.isHidden = !self.TableViewMenu.isHidden
+        
+        }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+        if let vc = storyboard.instantiateViewController(identifier: "ProfileController") as? ProfileController{
+            self.navigationController?.pushViewController(vc, animated: true)
+            let selectedItem = lstMenu[indexPath.row]
+
+            if selectedItem == "Service" {
+              
+                let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+
+             
+                let profileViewController = profileStoryboard.instantiateInitialViewController()
+
+             
+                self.present(profileViewController!, animated: true, completion: nil)
+            }
+         
+            else if selectedItem == "OtherMenuItem" {
+               
+            }
+        }
+        
     }
     
+    
     @IBOutlet weak var TableViewMenu: UITableView!
-    @IBOutlet weak var btnChonMenu: UIButton!
+    @IBOutlet weak var btnChonMenu: UIButton!	
     override func viewDidLoad() {
         super.viewDidLoad()
         self.TableViewMenu.isHidden = true
@@ -38,6 +64,12 @@ class MainMenuViewController: UIViewController, UITableViewDataSource, UITableVi
         return lstMenu.count
     }
     
+    @IBAction func BackApp(){
+        self.dismiss(animated: true)
+    }
+    @IBAction func BackApp1(){
+        self.dismiss(animated: true)
+    }
 
     /*
     // MARK: - Navigation

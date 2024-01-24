@@ -65,7 +65,7 @@ class LoginViewController: BaseViewController {
         oldLoginLabel.addGestureRecognizer(tap)
         oldLoginLabel.isUserInteractionEnabled = true
         */
-        settingAttrLabel()
+       // settingAttrLabel()
         callApiIP()
         self.errorMessageLabel.text = ""
         showPasswordButton.setTitle("", for: .normal)
@@ -134,9 +134,12 @@ class LoginViewController: BaseViewController {
                 }
             }
             let storyboard = UIStoryboard(name: "Menu", bundle: nil) // type storyboard name instead of Main
-                     if let myViewController = storyboard.instantiateViewController(withIdentifier:"MainMenuViewController") as? MainMenuViewController {
+            if let myViewController = storyboard.instantiateViewController(withIdentifier:"MainMenuViewController") as? MainMenuViewController {
+                         myViewController.modalPresentationStyle = .fullScreen
                          self.present(myViewController, animated: true, completion: nil)
+                       
                      }
+            
         }
     }
     
@@ -152,7 +155,7 @@ class LoginViewController: BaseViewController {
         self.navigationController?.pushViewController(FogotPassViewController(nibName: "FogotPassViewController", bundle: nil), animated: true)
     }
     
-    func settingAttrLabel() {
+    /*func settingAttrLabel() {
         let attrText = NSMutableAttributedString.getAttributedString(fromString: "Don’t have an account? Register")
         attrText.apply(color: UIColor(hexString: "FFFFFF"), subString: "Register")
         registerLabel.attributedText = attrText
@@ -160,7 +163,7 @@ class LoginViewController: BaseViewController {
         registerLabel.addGestureRecognizer(tap)
         registerLabel.isUserInteractionEnabled = true
     }
-    
+    */
     /*@objc func tapLabelLisAccountLogin(tap: UITapGestureRecognizer) {
         let vc = ListAccountVC(nibName: "ListAccountVC", bundle: nil)
         vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
@@ -175,5 +178,11 @@ class LoginViewController: BaseViewController {
         AppConstant.userId = nil
         self.navigationController?.setRootViewController(viewController: TabbarViewController(),
                                                          controllerType: TabbarViewController.self)
+    }
+    @IBAction func loadNext(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
     }
 }
